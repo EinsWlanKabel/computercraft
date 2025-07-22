@@ -22,7 +22,7 @@ elseif #arg1 > 0 then
     m.setTextScale(textScale)
     if arg1 > 0 then
         shell.run("monitor right youcube "..table.concat(arg1, " "))
-    else default ~= "" then
+    elseif default ~= "" then
         shell.run("monitor right youcube "..default)
     else
         print("Usage:")
